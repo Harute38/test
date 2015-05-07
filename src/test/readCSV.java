@@ -56,7 +56,7 @@ public class readCSV {
     }
 	
 	public void run() {
-		String csvFile = "/Users/kevin/workspace/test/src/test/test.csv";
+		String csvFile = "D:/Users/kevin/workspace/test/test.csv";
 		BufferedReader br = null;
 		String line = "";
 		String cvsSplitBy = ",";
@@ -67,9 +67,8 @@ public class readCSV {
 			// use comma as separator
 				String[] str = line.split(cvsSplitBy);
 				try {
-					gettimeZoneId(str[1],str[2]);
+					System.out.println(str[0] + "," + str[1] + "," + str[2] + gettimeZoneId(str[1],str[2]));
 				} catch (ParseException e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
 			}

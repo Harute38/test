@@ -17,6 +17,12 @@ import org.json.simple.parser.ParseException;
 
 public class readCSV {
 	
+	public static void hello(){
+		System.out.println("Hello");
+	}
+	
+	
+	
 	public static void main(String[] args) {
 		readCSV obj = new readCSV();
 		obj.run(); 
@@ -56,7 +62,7 @@ public class readCSV {
     }
 	
 	public void run() {
-		String csvFile = "/Users/kevin/workspace/test/src/test/test.csv";
+		String csvFile = "test.csv";
 		BufferedReader br = null;
 		String line = "";
 		String cvsSplitBy = ",";
